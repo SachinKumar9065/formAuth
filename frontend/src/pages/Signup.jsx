@@ -30,7 +30,7 @@ const Signup = () => {
         }
 
         try {
-            const url = "http://localhost:1000/api/signup";
+            const url = "https://form-auth-api.vercel.app/signup";
             const response = await fetch(url, {
                 method:"POST",
                 headers:{
