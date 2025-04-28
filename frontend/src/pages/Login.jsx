@@ -29,7 +29,7 @@ const Login = () => {
         }
 
         try {
-            const url = "https://form-auth-api.vercel.app/login";
+            const url = "https://form-auth-api.vercel.app/api/login";
             const response = await fetch(url, {
                 method:"POST",
                 headers:{
