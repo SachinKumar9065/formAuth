@@ -22,6 +22,10 @@ app.get('/', (req, res)=>{
     res.send("hello sachin")
 });
 
+app.get('/ping', (req, res) => {
+    res.send("pong");
+});
+
 mongoose.connect(process.env.MONGO_URL,{
     dbName:"Auth_Db"
 }).then(()=>console.log("mongoDb is connected")).catch((error)=>console.log(error));
